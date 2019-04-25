@@ -23,6 +23,8 @@
     "@angular/pwa": "^0.12.4",
     "@angular/router": "~7.2.0",
     "@angular/service-worker": "~7.2.0",
+    "@ngrx/effects": "^7.4.0",
+    "@ngrx/store": "^7.4.0",
     "core-js": "^2.5.4",
     "material-design-icons": "^3.0.1",
     "normalize.css": "^8.0.1",
