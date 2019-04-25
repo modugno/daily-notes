@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from "@modules/todo/shared/models/todo.model";
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { IDBService } from '@shared/modules/IDB/IDB.service';
 
 @Component({
   selector: 'app-todo',
@@ -10,13 +11,16 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class TodoComponent implements OnInit {
 
   public todos: Todo[] = [];
-  public todo: Todo;
   public todoForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(
+    private fb: FormBuilder,
+    private IDB: IDBService
+  ) {}
 
   ngOnInit() {
     this._setForm();
+    this.getTodo();
   }
 
   private _setForm(): void {
@@ -25,6 +29,19 @@ export class TodoComponent implements OnInit {
     })
   }
 
+  /**
+   * Get all todolist
+   */
+  private getTodo(): void {
+    this.IDB.getAll('todo').subscribe((data: Todo[]) => {
+      console.log('data', data);
+      this.todos = data;
+    })
+  }
+
+  /**
+   * Add todo
+   */
   add(): void {
     const todo: Todo = {
       title: this.todoForm.controls['title'].value
@@ -32,16 +49,24 @@ export class TodoComponent implements OnInit {
 
     this.todos.push(todo);
     this.todos = [...[], ...this.todos];
-    this.todoForm.markAsUntouched();
-    this.todoForm.reset();
 
-    Object.keys(this.todoForm.controls).forEach((name: string) => {
-      const control = this.todoForm.controls[name];
-      control.setErrors(null);
-    })
+    this.IDB.add('todo', todo).subscribe(() => {
+      // reset form and errors
+      this.todoForm.markAsUntouched();
+      this.todoForm.reset();
+
+      Object.keys(this.todoForm.controls).forEach((name: string) => {
+        const control = this.todoForm.controls[name];
+        control.setErrors(null);
+      })
+    });
   }
 
-  remove(index: number): void {
-    this.todos.splice(index, 1);
+  /**
+   * Remote Todo
+   * @param index
+   */
+  remove(todo: Todo, index: number): void {
+    this.IDB.delete('todo', todo.id).subscribe(() => this.todos.splice(index, 1))
   }
 }

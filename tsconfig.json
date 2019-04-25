@@ -19,7 +19,9 @@
       "dom"
     ],
     "paths": {
-      "@modules/*": ["src/app/modules/*"]
+      "@app/*": ["src/app/*"],
+      "@modules/*": ["src/app/modules/*"],
+      "@shared/*": ["src/app/shared/*"]
     }
   }
 }
