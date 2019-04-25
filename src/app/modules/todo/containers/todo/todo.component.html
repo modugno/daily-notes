@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <h1>Daily Notes</h1>
+</mat-toolbar>
+
+<div class="container">
+  <form class="todo__form form" [formGroup]="todoForm" (ngSubmit)="add()">
+    <mat-form-field class="form__field">
+      <input
+        matInput
+        formControlName="title"
+        type="text"
+        name="title"
+        placeholder="Criar uma nota...">
+      <button type="submit" mat-button matSuffix>
+        <mat-icon>check</mat-icon>
+      </button>
+    </mat-form-field>
+  </form>
+
+  <div class="todo__list">
+    <mat-list>
+      <h3 mat-subheader>Notas</h3>
+      <mat-list-item *ngFor="let todo of todos; let index = index">
+        <h4 mat-line>{{ todo.title }}</h4>
+        <button mat-icon-button (click)="remove(index)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+@import "grid";
+
+.container {
+  @extend %container;
+}
+
+.todo {
+  &__form {
+    margin-top: 2rem;
+  }
+}
+
+.form {
+  &__field {
+    width: 100%;
+  }
+}
