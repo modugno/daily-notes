@@ -33,10 +33,7 @@ export class TodoComponent implements OnInit {
    * Get all todolist
    */
   private getTodo(): void {
-    this.IDB.getAll('todo').subscribe((data: Todo[]) => {
-      console.log('data', data);
-      this.todos = data;
-    })
+    this.IDB.getAll('todo').subscribe((data: Todo[]) => this.todos = data)
   }
 
   /**
@@ -47,10 +44,10 @@ export class TodoComponent implements OnInit {
       title: this.todoForm.controls['title'].value
     }
 
-    this.todos.push(todo);
-    this.todos = [...[], ...this.todos];
+    this.IDB.add('todo', todo).subscribe((id: any) => {
+      todo.id = id;
+      this.todos.push(todo);
 
-    this.IDB.add('todo', todo).subscribe(() => {
       // reset form and errors
       this.todoForm.markAsUntouched();
       this.todoForm.reset();
@@ -59,7 +56,9 @@ export class TodoComponent implements OnInit {
         const control = this.todoForm.controls[name];
         control.setErrors(null);
       })
-    });
+
+
+    })
   }
 
   /**

@@ -1,7 +1,7 @@
 {
-  "name": "ToDo",
-  "short_name": "ToDo",
-  "theme_color": "#1976d2",
+  "name": "Daily Notes",
+  "short_name": "Daily Notes",
+  "theme_color": "#3f51b5",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/daily-notes/",
