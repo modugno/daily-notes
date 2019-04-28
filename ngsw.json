@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1556200190663,
+  "timestamp": 1556487493456,
   "index": "/daily-notes/index.html",
   "assetGroups": [
     {
@@ -8,13 +8,13 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/daily-notes/5.1f6bf6b53035861b9966.js",
+        "/daily-notes/5.9416d4e3a8903539ddcf.js",
         "/daily-notes/es2015-polyfills.c4c58c643c581e509304.js",
         "/daily-notes/favicon.ico",
         "/daily-notes/index.html",
         "/daily-notes/main.b454f0e67a9d7dcf4034.js",
         "/daily-notes/polyfills.a531a96cecea302cf122.js",
-        "/daily-notes/runtime.0617a9170bf10b44d100.js",
+        "/daily-notes/runtime.b2c86999fdaa2199550e.js",
         "/daily-notes/styles.294f711a83eb753f6fb9.css"
       ],
       "patterns": []
@@ -36,6 +36,7 @@
         "/daily-notes/assets/icons/icon-512x512.png",
         "/daily-notes/assets/icons/icon-72x72.png",
         "/daily-notes/assets/icons/icon-96x96.png",
+        "/daily-notes/assets/icons/loading.png",
         "/daily-notes/assets/scss/_grid.scss"
       ],
       "patterns": []
@@ -43,26 +44,27 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/daily-notes/5.1f6bf6b53035861b9966.js": "008dc99bc5c13f37ef0f86bfea80457b391167d6",
+    "/daily-notes/5.9416d4e3a8903539ddcf.js": "3f99841614e4d5a5d2f9f7e501155f891f7f5556",
     "/daily-notes/MaterialIcons-Regular.012cf6a10129e2275d79.woff": "c6c953c2ccb2ca9abb21db8dbf473b5a435f0082",
     "/daily-notes/MaterialIcons-Regular.570eb83859dc23dd0eec.woff2": "09963592e8c953cc7e14e3fb0a5b05d5042e8435",
     "/daily-notes/MaterialIcons-Regular.a37b0c01c0baf1888ca8.ttf": "fc05de31234e0090f7ddc28ce1b23af4026cb1da",
     "/daily-notes/MaterialIcons-Regular.e79bfd88537def476913.eot": "26fb8cecb5512223277b4d290a24492a0f09ede1",
-    "/daily-notes/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/daily-notes/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/daily-notes/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/daily-notes/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/daily-notes/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/daily-notes/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/daily-notes/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/daily-notes/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/daily-notes/assets/icons/icon-128x128.png": "e759c53bd24803143abc15b11c5ddacfe0c5ee87",
+    "/daily-notes/assets/icons/icon-144x144.png": "a04c4d1d0084f8b0b682026e855e304d03d69c1e",
+    "/daily-notes/assets/icons/icon-152x152.png": "62d3bd0618476e83badf8098b8d77d016032dad4",
+    "/daily-notes/assets/icons/icon-192x192.png": "73b50b7b55a2d8ef7ab20535b809ed24f9d8dae5",
+    "/daily-notes/assets/icons/icon-384x384.png": "e36eb2d52cf8a4aaa66990355e09c39d99d6f914",
+    "/daily-notes/assets/icons/icon-512x512.png": "d3745254d9f47f413bd7699f5df85398395a659c",
+    "/daily-notes/assets/icons/icon-72x72.png": "2a4d6ecb48f4248c3e90c08fe2d93384d4ebb02d",
+    "/daily-notes/assets/icons/icon-96x96.png": "3f24bfa253b03a6d22bfc37c10c6c17b2f4046e6",
+    "/daily-notes/assets/icons/loading.png": "e9f8913402a540308194023b6c6a43b5eccda237",
     "/daily-notes/assets/scss/_grid.scss": "95e9abdc8d8931fdf48bf1aaf68b05d466dd801a",
     "/daily-notes/es2015-polyfills.c4c58c643c581e509304.js": "63588ac2161538365f75e64f2a2c3a0642c4c096",
-    "/daily-notes/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/daily-notes/index.html": "830c0476db560dbe514c320207a98aa8e61784ef",
+    "/daily-notes/favicon.ico": "354b3e0dc8078b958a83e7777257406276e67c8c",
+    "/daily-notes/index.html": "08b8253294d92ef9b44e07e0a9fa2b6f0b1f3cad",
     "/daily-notes/main.b454f0e67a9d7dcf4034.js": "9c464699f294ce9e66a71bff5fbe1ba324ad1dbe",
     "/daily-notes/polyfills.a531a96cecea302cf122.js": "b86140469829f747bc75496506173d35320ad7fa",
-    "/daily-notes/runtime.0617a9170bf10b44d100.js": "e48239373a93c958f93503a08058b044505a0533",
+    "/daily-notes/runtime.b2c86999fdaa2199550e.js": "b8e8939f0cff3924b69d402fbb226a1ae4e7b934",
     "/daily-notes/styles.294f711a83eb753f6fb9.css": "a6799cb347c804bd1a8d75b6db61903fc4cbe51c"
   },
   "navigationUrls": [
